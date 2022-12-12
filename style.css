@@ -1,6 +1,7 @@
 :root {
   --main-red: #8E2424;
   --main-gray: #667085;
+  --main-black: #101828;
 }
 
 * {
@@ -21,22 +22,23 @@ body * {
   font-family: 'Inter', sans-serif;
 }
 
+img {
+  display: block;
+  width: 100%;
+}
+
+.container {
+  max-width: 1280px;
+  padding: 0 32px;
+}
+
 /* HEADER */
 
 .menu-container {
-  max-width: 1280px;
   margin: 18px auto;
-  padding: 0 32px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.menu-logo a {
-  display: block;
-  font-size: 1.125em;
-  font-weight: 500;
-  color: #3A404E;
 }
 
 .menu-nav ul {
@@ -95,7 +97,7 @@ body * {
 .sobre-info h1 {
   margin: 24px 0 36px 0;
   font-size: 3em;
-  color: #101828;
+  color: var(--main-black);
   letter-spacing: -0.02em;
 }
 
@@ -114,9 +116,7 @@ body * {
 }
 
 .metricas-container {
-  max-width: 1280px;
   margin: 0 auto;
-  padding: 0 32px;
   display: flex;
 }
 
@@ -139,11 +139,44 @@ body * {
 .titulo-metricas {
   font-size: 1.125em;
   font-weight: 500;
-  color: #101828;
+  color: var(--main-black);
   margin-top: 12px;
   margin-bottom: 8px;
 }
 
 .detalhes-metricas {
+  color: var(--main-gray);
+}
+
+/* VAGAS TALENTOS */
+
+.talentos-container {
+  margin: 96px auto 64px auto;
+}
+
+.talentos-info {
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.vagas-talentos {
+  display: inline-block;
+  padding: 5px 12px;
+  background: rgba(142, 36, 36, 0.05);
+  color: var(--main-red);
+  font-weight: 500;
+  font-size: 0.875em;
+  border-radius: 16px;
+}
+
+.titulo-talentos {
+  margin: 20px 0;
+  font-size: 2.25em;
+  letter-spacing: -0.02em;
+  color: var(--main-black);
+}
+
+.detalhes-talentos {
+  font-size: 1.25em;
   color: var(--main-gray);
 }
