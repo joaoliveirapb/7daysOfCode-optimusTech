@@ -37,6 +37,7 @@ img {
 .menu-container {
   margin: 18px auto;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
@@ -227,4 +228,52 @@ img {
   font-weight: 500;
   color: var(--main-black);
   margin-bottom: 32px;
+}
+
+/* DEPOIMENTO */
+
+.depoimento-container {
+  margin: 0 auto 96px auto;
+}
+
+.conteudo-depoimento {
+  text-align: center;
+  padding: 64px;
+  background: rgba(196, 25, 25, 0.03);
+  border-radius: 16px;
+}
+
+.titulo-depoimento {
+  font-size: 0.875em;
+  font-weight: 600;
+  color: var(--main-red);
+}
+
+.citacao-depoimento {
+  margin: 16px 0 32px 0;
+}
+
+.citacao-depoimento p {
+  font-size: 2.25em;
+  font-weight: 500;
+  color: var(--main-black);
+  line-height: 44px;
+  letter-spacing: -0.02em;
+}
+
+.avatar-container {
+  width: 56px;
+  height: 56px;
+  margin: 0 auto;
+}
+
+.nome-colaborador {
+  font-weight: 500;
+  color: var(--main-black);
+  margin: 16px 0 4px 0;
+}
+
+.cargo-colaborador {
+  font-size: 0.875em;
+  color: var(--main-gray);
 }
