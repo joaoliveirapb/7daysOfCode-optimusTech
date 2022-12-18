@@ -32,6 +32,19 @@ img {
   padding: 0 32px;
 }
 
+@media (max-width: 800px) {
+  .container {
+    max-width: 600px;
+    padding: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    max-width: 380px;
+  }
+}
+
 /* HEADER */
 
 .menu {
@@ -45,10 +58,7 @@ img {
 .menu-nav ul {
   display: flex;
   flex-wrap: wrap;
-}
-
-.menu-nav li + li {
-  margin-left: 32px;
+  gap: 32px;
 }
 
 .menu-nav a {
@@ -59,16 +69,13 @@ img {
 
 .menu-buttons {
   display: flex;
+  gap: 12px;
 }
 
 .menu-buttons a {
   display: block;
   padding: 10px 18px;
   color: var(--main-gray);
-}
-
-.menu-buttons a + a {
-  margin-left: 12px;
 }
 
 .menu-buttons a:last-child {
@@ -81,6 +88,31 @@ img {
 
 .menu-buttons a:last-child:hover {
   background-color: #851f1f;
+}
+
+@media (max-width: 800px) {
+  .menu {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 12px;
+  }
+  .menu-nav ul {
+    gap: 20px;
+  }
+  .menu-nav a, .menu-buttons a {
+    padding: 0;
+  }
+  .menu-buttons {
+    gap: 18px;
+  }
+  .menu-buttons a {
+    padding: 8px 0;
+  }
+  .menu-buttons a:last-child {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
 }
 
 /* SOBRE INFO */
@@ -110,6 +142,19 @@ img {
   color: var(--main-gray);
 }
 
+@media (max-width: 800px) {
+  .sobre-info {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .sobre-info {
+    max-width: 380px;
+  }
+}
+
 /* MÉTRICAS */
 
 .metricas {
@@ -119,10 +164,8 @@ img {
 .metricas-container {
   margin: 0 auto;
   display: flex;
-}
-
-.metricas-container div + div {
-  margin-left: 32px;
+  flex-wrap: wrap;
+  gap: 32px;
 }
 
 .metrica-item {
@@ -148,6 +191,27 @@ img {
 
 .detalhes-metricas {
   color: var(--main-gray);
+}
+
+@media (max-width: 800px) {
+  .metricas-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+  .metricas-container div + div {
+    margin: 0;
+  }
+  .metrica-item {
+    width: 400px;
+  }
+}
+
+@media (max-width: 600px) {
+  .metrica-item {
+    width: 100%;
+  }
 }
 
 /* VAGAS TALENTOS */
@@ -278,6 +342,13 @@ img {
   color: var(--main-gray);
 }
 
+@media (max-width: 600px) {
+  .citacao-depoimento p {
+    font-size: 1.25em;
+    line-height: 30px;
+  }
+}
+
 /* FOOTER */
 
 .footer {
@@ -319,6 +390,12 @@ img {
   border-radius: 8px;
   box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
   transition: 0.3s;
+}
+
+@media (max-width: 480px) {
+  .formulario-oportunidades input {
+    width: auto;
+  }
 }
 
 .formulario-oportunidades button:hover {
