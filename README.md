@@ -7,6 +7,10 @@ utilizando HTML e CSS.
 
 ![preview](./.github/preview.png)
 
+---
+
+[Clique aqui para acessar](https://joaoliveirapb.github.io/7daysofcode-html-css/)
+
 ## 🛠️ Tecnologias
 
 - HTML
