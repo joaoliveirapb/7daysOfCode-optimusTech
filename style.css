@@ -90,28 +90,55 @@ img {
   background-color: #851f1f;
 }
 
+.mobile-menu-icon {
+  display: none;
+}
+
+.mobile-menu {
+  display: none;
+}
+
 @media (max-width: 800px) {
-  .menu {
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: 12px;
-  }
-  .menu-nav ul {
-    gap: 20px;
-  }
-  .menu-nav a, .menu-buttons a {
-    padding: 0;
+  .menu-nav {
+    display: none;
   }
   .menu-buttons {
-    gap: 18px;
+    display: none;
   }
-  .menu-buttons a {
-    padding: 8px 0;
+  .mobile-menu-icon {
+    display: block;
   }
-  .menu-buttons a:last-child {
-    padding-right: 10px;
-    padding-left: 10px;
+  .mobile-menu-icon button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  .mobile-menu ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+  .mobile-menu-buttons {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .mobile-menu ul a, .mobile-menu-buttons a {
+    color: var(--main-gray);
+  }
+  .mobile-menu-buttons a:last-child {
+    border: 1px solid #851f1f;
+    background-color: var(--main-red);
+    color: #FFFFFF;
+    border-radius: 8px;
+    margin-top: 10px;
+    padding: 10px;
+  }
+  .open {
+    display: block;
   }
 }
 
