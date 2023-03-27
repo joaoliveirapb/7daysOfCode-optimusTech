@@ -195,31 +195,6 @@ img {
   gap: 32px;
 }
 
-.metrica-item {
-  text-align: center;
-  width: 280px;
-}
-
-.numero-metricas {
-  display: block;
-  font-size: 3.75em;
-  font-weight: 600;
-  color: var(--main-red);
-  letter-spacing: -0.02em;
-}
-
-.titulo-metricas {
-  font-size: 1.125em;
-  font-weight: 500;
-  color: var(--main-black);
-  margin-top: 12px;
-  margin-bottom: 8px;
-}
-
-.detalhes-metricas {
-  color: var(--main-gray);
-}
-
 @media (max-width: 800px) {
   .metricas-container {
     flex-direction: column;
@@ -229,15 +204,6 @@ img {
   }
   .metricas-container div + div {
     margin: 0;
-  }
-  .metrica-item {
-    width: 400px;
-  }
-}
-
-@media (max-width: 600px) {
-  .metrica-item {
-    width: 100%;
   }
 }
 
@@ -443,26 +409,6 @@ img {
 
 .sobre-info {
   animation: fromTop .3s .2s backwards;
-}
-
-.metrica-item {
-  animation: fromLeft .4s .3s backwards;
-}
-
-.metrica-item:nth-child(4) {
-  animation-delay: 0;
-}
-
-.metrica-item:nth-child(3) {
-  animation-delay: .4s;
-}
-
-.metrica-item:nth-child(2) {
-  animation-delay: .6s;
-}
-
-.metrica-item:nth-child(1) {
-  animation-delay: .8s;
 }
 
 .talentos {
