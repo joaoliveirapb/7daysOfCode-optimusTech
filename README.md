@@ -9,7 +9,7 @@ utilizando HTML e CSS.
 
 ---
 
-[Clique aqui para acessar](https://joaoliveirapb.github.io/7daysofcode-html-css/)
+[Clique aqui para acessar](https://joaoliveirapb.github.io/7daysOfCode-optimusTech/)
 
 ## 🛠️ Tecnologias
 
