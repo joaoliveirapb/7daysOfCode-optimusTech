@@ -254,37 +254,11 @@ img {
   margin: 0 auto;
 }
 
-.area .vaga-item + .vaga-item {
-  margin-top: 24px;
-}
-
 .titulo-area {
   margin-bottom: 32px;
   font-size: 1.25em;
   font-weight: 500;
   color: var(--main-black);
-}
-
-.vaga-item {
-  padding: 24px 24px 28px 24px;
-  border: 1px solid #EAECF0;
-  border-radius: 16px;
-  box-shadow: 2px 2px 10px 0px rgba(44, 44, 44, 0.15);
-}
-
-.vaga-item span + span {
-  margin-left: 24px;
-}
-
-.vaga-item span {
-  color: var(--main-gray);
-}
-
-.titulo-vaga {
-  font-size: 1.125em;
-  font-weight: 500;
-  color: var(--main-black);
-  margin-bottom: 32px;
 }
 
 /* DEPOIMENTO */

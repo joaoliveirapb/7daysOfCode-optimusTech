@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="./style.css">
   <!-- JS -->
   <script src="./js/components/MetricsItem.js" defer></script>
+  <script src="./js/components/VacantJob.js" defer></script>
   <script src="./js/menu-mobile.js" defer></script>
 
   <title>OptimusTech</title>
@@ -107,38 +108,40 @@
       <div class="vagas-abertas container">
         <div class="area">
           <h3 class="titulo-area">Design</h3>
-          <div class="vaga-item">
-            <h4 class="titulo-vaga">Product Designer</h4>
-            <span>Full-time</span>
-            <span>Faixa salarial: R$7.000</span>
-          </div>
 
-          <div class="vaga-item">
-            <h4 class="titulo-vaga">UX Design</h4>
-            <span>Full-time</span>
-            <span>Faixa salarial: R$6.000</span>
-          </div>
+          <vaga-item
+            name-of-vacant="Product Designer"
+            period="Full-time"
+            wage="Faixa salarial: R$7.000"
+          ></vaga-item>
+
+          <vaga-item
+            name-of-vacant="UX Design"
+            period="Full-time"
+            wage="Faixa salarial: R$6.000"
+          ></vaga-item>
         </div>
 
         <div class="area">
           <h3 class="titulo-area">Desenvolvimento de Software</h3>
-          <div class="vaga-item">
-            <h4 class="titulo-vaga">Desenvolvedor(a) iOS</h4>
-            <span>Full-time</span>
-            <span>Faixa salarial: R$8.000</span>
-          </div>
 
-          <div class="vaga-item">
-            <h4 class="titulo-vaga">Desenvolvedor(a) Front-End</h4>
-            <span>Full-time</span>
-            <span>Faixa salarial: R$7.000</span>
-          </div>
+          <vaga-item
+            name-of-vacant="Desenvolvedor(a) iOS"
+            period="Full-time"
+            wage="Faixa salarial: R$8.000"
+          ></vaga-item>
 
-          <div class="vaga-item">
-            <h4 class="titulo-vaga">Desenvolvedor(a) Back-End</h4>
-            <span>Full-time</span>
-            <span>Faixa salarial: R$8.000</span>
-          </div>
+          <vaga-item
+            name-of-vacant="Desenvolvedor(a) Front-End"
+            period="Full-time"
+            wage="Faixa salarial: R$7.000"
+          ></vaga-item>
+
+          <vaga-item
+            name-of-vacant="Desenvolvedor(a) Back-End"
+            period="Full-time"
+            wage="Faixa salarial: R$8.000"
+          ></vaga-item>
         </div>
       </div>
     </section>
